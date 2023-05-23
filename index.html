@@ -8,6 +8,62 @@
 </head>
 
 <style>
+  @keyframes arrow-animation-left {
+    0% {
+      left: 0%;
+    }
+    
+    25% {
+      left: 50%;
+      transform: translateX(-50%);
+      animation-timing-function: ease-out;
+    }
+    
+    50% {
+      left: 75%;
+      transform: translateX(-50%);
+      animation-timing-function: ease-in-out;
+    }
+    
+    75% {
+      left: 100%;
+      transform: translateX(-50%);
+      animation-timing-function: ease-in;
+    }
+    
+    100% {
+      left: 100%;
+    }
+  }
+  
+  @keyframes arrow-animation-right {
+     0% {
+      right: 0%;
+    }
+    
+    25% {
+      right: 50%;
+      transform: translateX(50%);
+      animation-timing-function: ease-out;
+    }
+    
+    50% {
+      right: 75%;
+      transform: translateX(50%);
+      animation-timing-function: ease-in-out;
+    }
+    
+    75% {
+      right: 100%;
+      transform: translateX(50%);
+      animation-timing-function: ease-in;
+    }
+    
+    100% {
+      right: 100%;
+    }
+  }
+  
   @keyframes text-animation {
     0% {
       opacity: 0;
@@ -57,17 +113,18 @@
     background: linear-gradient(to bottom,
         #ffe4e1, rgba(255, 255, 255, 0));
     transform-origin: center;
-    animation: arrow-animation 4s infinite linear;
   }
 
   .intro-bg::before {
     left: 0;
     transform: rotate(-45deg);
+    animation: arrow-animation-left 14s infinite linear;
   }
 
   .intro-bg::after {
     right: 0;
     transform: rotate(45deg);
+    animation: arrow-animation-right 14s infinite linear;
   }
 
   .intro-text {
@@ -117,13 +174,23 @@
     animation-delay: 28s;
   }
   
+  .text-item:nth-child(6) {
+    animation-delay: 35s;
+  }
+  
+  .text-item:nth-child(7) {
+    animation-delay: 42s;
+  }
+  
 </style>
 
 <div class="intro-bg"></div>
 <div class="intro-text">
   <span class="text-item">Welcome, friend!</span>
-  <span class="text-item">You have now entered the Sonosphere...</span>
+  <span class="text-item">You have now entered my dreamscape, the Sonosphere...</span>
   <span class="text-item">A curated, synesthetic musical experience awaits you</span>
   <span class="text-item">This experience is curated via the core genres of Carlos's music journey</span>
+  <span class="text-item">So, all you avid listeners, aspiring producers, and wishful singers...</span>
+  <span class="text-item">Pay close attention to what the purpose of this exercise might be</span>
   <span class="text-item">Without further ado, here we go!</span>
 </div>
