@@ -163,19 +163,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index: 2;
-    overflow: hidden;
+    z-index: 5;
   }
 
   .text-item {
+    position: absolute;
     opacity: 0;
     font-size: 30px;
     font-family: "Bungee Shade";
     color: #947fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 
       0 0 0 #8a2be2, 0 0 2px black;
-    animation: text-animation 6s linear forwards;
-    z-index: 3;
+    animation: text-animation 5s linear forwards;
+    z-index: 10;
   }
 
   .text-item:nth-child(1) {
@@ -183,27 +183,35 @@
   }
 
   .text-item:nth-child(2) {
-    animation-delay: 7s;
+    animation-delay: 5s;
   }
 
   .text-item:nth-child(3) {
-    animation-delay: 14s;
+    animation-delay: 10s;
   }
 
   .text-item:nth-child(4) {
-    animation-delay: 21s;
+    animation-delay: 15s;
   }
 
   .text-item:nth-child(5) {
-    animation-delay: 28s;
+    animation-delay: 20s;
   }
   
   .text-item:nth-child(6) {
-    animation-delay: 35s;
+    animation-delay: 25s;
   }
   
   .text-item:nth-child(7) {
-    animation-delay: 42s;
+    animation-delay: 30s;
+  }
+  
+  .text-item:nth-child(8) {
+    animation-delay: 35s;
+  }
+  
+  .text-item:nth-child(9) {
+    animation-delay: 40s;
   }
   
 </style>
