@@ -12,82 +12,82 @@
     0% {
       left: 0%;
     }
-    
+
     25% {
       left: 50%;
       transform: translateX(-50%);
       animation-timing-function: ease-out;
     }
-    
+
     50% {
       left: 75%;
       transform: translateX(-50%);
       animation-timing-function: ease-in-out;
     }
-    
+
     75% {
       left: 100%;
       transform: translateX(-50%);
       animation-timing-function: ease-in;
     }
-    
+
     90% {
       left: 97%;
       transform: translateX(-50%);
       animation-timing-function: ease-out;
     }
-    
+
     95% {
       left: 99%;
       transform: translateX(-50%);
       animation-timing-function: ease;
     }
-    
+
     100% {
       left: 100%;
     }
   }
-  
+
   @keyframes arrow-animation-right {
-     0% {
+    0% {
       right: 0%;
     }
-    
+
     25% {
       right: 50%;
       transform: translateX(50%);
       animation-timing-function: ease-out;
     }
-    
+
     50% {
       right: 75%;
       transform: translateX(50%);
       animation-timing-function: ease-in-out;
     }
-    
+
     75% {
       right: 100%;
       transform: translateX(50%);
       animation-timing-function: ease-in;
     }
-    
+
     90% {
       right: 97%;
       transform: translateX(50%);
       animation-timing-function: ease-out;
     }
-    
+
     95% {
       right: 99%;
       transform: translateX(50%);
       animation-timing-function: ease;
     }
-    
+
     100% {
       right: 100%;
     }
   }
-  
+
   @keyframes text-animation {
     0% {
       opacity: 0;
@@ -113,6 +113,20 @@
   body {
     margin: 0;
     padding: 0;
+  }
+  
+  .intro-container {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 56.25%;
+  }
+  
+  .intro-container > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 
   .intro-bg {
@@ -172,7 +186,7 @@
     font-size: 30px;
     font-family: "Bungee Shade";
     color: #947fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5),
       0 0 0 #8a2be2, 0 0 2px black;
     animation: text-animation 5s linear forwards;
     z-index: 10;
@@ -197,68 +211,69 @@
   .text-item:nth-child(5) {
     animation-delay: 20s;
   }
-  
+
   .text-item:nth-child(6) {
     animation-delay: 25s;
   }
-  
+
   .text-item:nth-child(7) {
     animation-delay: 30s;
   }
-  
+
   .text-item:nth-child(8) {
     animation-delay: 35s;
   }
-  
+
   .text-item:nth-child(9) {
     animation-delay: 40s;
   }
-  
 </style>
 
-<div class="intro-bg"></div>
-<div class="intro-text">
-  <span class="text-item">
-    Welcome, friends!
-  </span>
-  
-  <span class="text-item">
-    You have now entered my dreamscape, the Sonosphere...
-  </span>
-  
-  <span class="text-item" style="white-space: pre-line;">
-    A curated, chromesthetic<br>
-    musical experience awaits you
-  </span>
-  
-  <span class="text-item" style="white-space: pre-line;">
-    per my personal music-color association,<br>
-    at least
-  </span>
-  
-  <span class="text-item" style="white-space: pre-line;">
-    we all perceive<br>
-    color and sound differently
-  </span>
-  
-  <span class="text-item" style="white-space: pre-line;">
-    so maybe each track<br>
-    makes you think of a totally different visual!
-  </span>
-  
-  <span class="text-item" style="white-space: pre-line;">
-    all you avid listeners,<br>
-    aspiring producers,<br>
-    and wishful singers
-  </span>
-  
-  <span class="text-item" style="white-space: pre-line;">
-    Pay close attention<br>
-    to what the purpose of this exercise might be
-  </span>
-  
-  <span class="text-item" style="white-space: pre-line;">
-    Without further ado,<br>
-    here we go!
-  </span>
+<div class="intro-container">
+  <div class="intro-bg"></div>
+  <div class="intro-text">
+    <span class="text-item">
+      Welcome, friends!
+    </span>
+
+    <span class="text-item">
+      You have now entered my dreamscape, the Sonosphere...
+    </span>
+
+    <span class="text-item" style="white-space: pre-line;">
+      A curated, chromesthetic<br>
+      musical experience awaits you
+    </span>
+
+    <span class="text-item" style="white-space: pre-line;">
+      per my personal music-color association,<br>
+      at least
+    </span>
+
+    <span class="text-item" style="white-space: pre-line;">
+      we all perceive<br>
+      color and sound differently
+    </span>
+
+    <span class="text-item" style="white-space: pre-line;">
+      so maybe each track<br>
+      makes you think of a totally different visual!
+    </span>
+
+    <span class="text-item" style="white-space: pre-line;">
+      all you avid listeners,<br>
+      aspiring producers,<br>
+      and wishful singers
+    </span>
+
+    <span class="text-item" style="white-space: pre-line;">
+      Pay close attention<br>
+      to what the purpose of this exercise might be
+    </span>
+
+    <span class="text-item" style="white-space: pre-line;">
+      Without further ado,<br>
+      here we go!
+    </span>
+  </div>
 </div>
